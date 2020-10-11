@@ -53,9 +53,7 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
       border: none; /* <-- This thing here */
       border:solid 1px #ccc;
       border-radius: 35px;
-    padding: 0 20px;
-    
-    
+    padding: 0 20px;    
 }
 .pesquisa
 {
