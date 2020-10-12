@@ -22,20 +22,85 @@
             </ul>
             <ul class="menu">
                 <li><a href="">Carrinho</a></li>
-                <li><a href="">Login</a></li>
+                <button id="fazer-login">Login</button>
             </ul>
         </div>
-
+        
         <div class="nav-categoria">
-            <ul>
-                <li>
+           
+                <button id="botao-abre-menu">
                     <img  id="tresIcons"src="img/3icons.png" alt="3 tracos">
-                    <a href="">Categoria</a>
-                </li>
-            </ul>
+                    Categoria
+                </button>
         </div>
     </nav>
-                                                                                                            <!--end nav-->
+    <section  id="menu-responsivo" >
+        <button id="btnFechaMenu" style="font-weight: bolder;font-size: 1em; text-align: center;border: none;background: transparent;">X</button>
+
+        <section class="menu-row"> <!--conteudo em linha horizontal-->
+            <ul>
+                <li><a href="">Masculinas</a></li>
+                <li><a href="">Femininas</a></li>
+                <li><a href="">Infantis</a></li>
+            </ul>  
+        </section>
+
+       <section class="menu-column">
+       
+        <section class="menu-column-links"><!--conteudo em linha horizontal-->
+            <ul>
+                <li><h3>marcas</h3></li>
+                <li><a href="">Adidas</a></li>
+                <li><a href="">oakley</a></li>
+                <li><a href="">Quiksilver</a></li>
+            </ul>
+        </section>
+        <section class="menu-column-links"><!--conteudo em linha horizontal-->
+            <ul>
+                <li><h3>Roupas</h3></li>
+                <li><a href="">Camisas</a></li>
+                <li><a href="">Calças</a></li>
+                <li><a href="">Bermudas</a></li>
+                <li><a href="">Jaquetas</a></li>
+                <li><a href="">Chinelos</a></li>
+                <li><a href="">Moletons</a></li>
+            </ul>
+        </section>
+        <section class="menu-column-links"><!--conteudo em linha horizontal-->
+            <ul>
+                <li><h3>Acessorio</h3></li>
+                <li><a href="">Bones</a></li>
+                <li><a href="">Meias</a></li>
+                <li><a href="">Oculos</a></li>
+                <li><a href="">Relogios</a></li>
+            </ul>
+        </section>
+        
+       </section>
+        
+    </section> 
+    <section id="login">
+       
+        <section id="container-login">
+            <button  id="sair-menu"style="border: none;background-color: transparent;font-weight: bolder;font-size: 1,1em;"> X </button>
+            <h2>FAÇA O LOGIN</h2>
+            <form action="" method="POST" id="formulario-login">
+                <p>
+                    <label for="">Login:</label>
+                    <input type="text"placeholder="">
+                </p>
+                <p>
+                    <label for="">Senha:</label>
+                    <input type="text"placeholder="">
+                    <h4>esqueceu senha</h4>
+                </p>
+                <p>
+                    <input class="botao-form" type="submit" value="ENTRAR">
+                    <h4>cadastrar novo usuario</h4>
+                </p>
+            </form>
+        </section>
+    </section>                                                                                                     <!--end nav-->
 
                                                                                                         <!--featuring-->
     <section class="featuring">
@@ -84,7 +149,7 @@
        </section>
   
     </section>
- <hr>                                                                                                       <!--categoria-->
+                                                                                                     <!--categoria-->
     <section class="categorias">
         <h3>CATEGORIA</h3>
         <div class="container-categorias">
@@ -109,7 +174,7 @@
         </div>
     </section>
    
-     <hr>                                                                                               <!--end categoria-->
+                                                                                                 <!--end categoria-->
                                                                                                     <!--marcas-->
     <section class="marcas">
         <h3>ALGUMAS DAS MARCAS</h3>
@@ -124,5 +189,25 @@
             TODOS OS DIREITOS RESERVADOS
         </p>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    document.getElementById("botao-abre-menu").onclick = function(){
+        document.querySelector("#menu-responsivo").classList.add("show");
+    }
+    document.getElementById("btnFechaMenu").onclick = function(){
+        document.querySelector("#menu-responsivo").classList.remove("show");
+    }
+
+    $("#fazer-login").on('click', function(){
+    $("#login").fadeIn();
+    $("#container-login").slideDown();
+});
+
+$("#sair-menu").on('click', function(){
+    $("#container-login").slideUp();
+    $("#login").fadeOut();
+});
+
+</script>
 </body>
 </html>

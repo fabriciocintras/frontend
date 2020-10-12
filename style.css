@@ -44,6 +44,7 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
     text-align: left;
     background: #FFFFFF;
     padding-left: 30px;
+    position: relative;
 }
 .input-menu
 {
@@ -57,8 +58,10 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
     
     
 }
+
 .pesquisa
 {
+    
     position: relative;
 }
 .icone-input{
@@ -69,6 +72,7 @@ top: 10px;right: 20px;
 .icone-input img{
     width: 100%;
 }
+
 #tresIcons{
     width: 18px;
 }
@@ -82,15 +86,104 @@ top: 10px;right: 20px;
     padding: 15px;
     color: white;
     font-weight: 500;
-}
-.featuring
+}#botao-abre-menu
 {
-   
-    padding-top: 138px;
+    border: none;
+    background-color:transparent;
+}
+/*menu responsivo*/
+#menu-responsivo
+{   
+    position: relative;
+    left: 0px;
+    background: rgba(255, 255, 255, 0.966);
+    padding-top: 150px ;
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    z-index: 99;
+    border: 1px solid rgba(0, 0, 0, 0.432);
+    transform: translate3d(-1500px, 0, 0);
+    transition: transform .50s cubic-bezier(0, .52, 0, 1);
+}
+#menu-responsivo.show {
+    transform: translate3d(0px, 0, 0);
+}
+#login
+{
+    padding: 30px 30px;
+    position: fixed; z-index: 101;
+    top: 150px;
+    right: 500px;
+    display: none;
+    height: auto;
+    background: rgb(206, 206, 206);
+    border-radius: 15px;
+}
+
+#container-login{
+    border-radius: 15px;
+    display: flex; flex-direction: column; justify-content: start;align-items: center;
+    background: transparent;
+    padding: 30px;
+}
+.botao-form 
+{
+    border: none;
+    width: 100px;
+    padding: 5px 5px;
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#formulario-login p{
     display: flex;
     flex-direction: column;
-    
+    margin: 0%;
+    padding: 0%;
+}
+.formulario-login label
+{
+    font-size: 1.4em;
+    font-weight: 500;
+    border: none;
+}
+#formulario-login input{
+    margin: 5px;
+    padding: 10px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+}
+.menu-row
+{
+    width: 100%;
+}
+.menu-row ul{
+    display: flex;
+    justify-content: space-around;
+}
+.menu-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/*menu responsivo*/
+.featuring
+{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 98;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url("img/fashion-1031469_1920.jpg");
+
 }
 .container-featuring
 {
@@ -99,12 +192,12 @@ top: 10px;right: 20px;
     height:600px;
     display: flex;
     flex-direction: column;
-
     align-items: center;
 }
 .container-featuring > .frete
 {
-    position: fixed ;
+    position: fixed;
+    top: 100px;
     background: #a5a5a5b0;
     width: 100%;
     height: 40px;
@@ -156,7 +249,7 @@ top: 10px;right: 20px;
 }
 .container-sessao
 {
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -194,7 +287,7 @@ top: 10px;right: 20px;
 }
 .container-categorias
 {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
@@ -219,10 +312,12 @@ top: 10px;right: 20px;
     width: 100%;
     justify-content: center;
     align-items: center;
+    background: rgba(0, 0, 0, 0.089);
+    
 }
 .container-marcas
 {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -252,4 +347,5 @@ top: 10px;right: 20px;
     text-align: center;
     color: white;
 }
+
 
