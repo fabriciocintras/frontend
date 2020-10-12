@@ -32,12 +32,13 @@
            
                 <button id="botao-abre-menu">
                     <img  id="tresIcons"src="img/3icons.png" alt="3 tracos">
-                    <a href="" >Categoria</a>
-                
+                    Categoria
+                </button>
         </div>
     </nav>
     <section  id="menu-responsivo" >
         <button id="btnFechaMenu">Fecha o Menu</button>
+
         <section class="menu-row"> <!--conteudo em linha horizontal-->
             <ul>
                 <li><a href="">Masculinas</a></li>
@@ -171,11 +172,11 @@
 <script>
     
 document.getElementById("botao-abre-menu").onclick = function(){
-    document.querySelector("#menu-responsivo").style.display="initial";
+    document.querySelector("#menu-responsivo").classList.add("show");
 }
 
 document.getElementById("btnFechaMenu").onclick = function(){
-    document.querySelector("#menu-responsivo").style.display="initial"
+    document.querySelector("#menu-responsivo").classList.remove("show");
 }
 
 </script>
