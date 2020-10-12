@@ -98,7 +98,7 @@ top: 10px;right: 20px;
 }#botao-abre-menu
 {   font-size: 1.1em;
     border: none;
-    background-color:wheat;
+    background-color:rgb(255, 255, 255);
     
 }
 /*menu responsivo*/
@@ -186,8 +186,7 @@ top: 10px;right: 20px;
 .featuring
 {
  
-    width: 100%;
- 
+    width: 100%;height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -247,7 +246,7 @@ top: 10px;right: 20px;
     background: #5B1865;
     width: 22%;
     padding: 15px 0px;
-    color: #FFFFFF;
+    color: #ffffff;
     justify-content: center;
     align-items: center;
 }
