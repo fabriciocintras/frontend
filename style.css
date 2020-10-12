@@ -98,27 +98,32 @@ top: 10px;right: 20px;
 }#botao-abre-menu
 {   font-size: 1.1em;
     border: none;
-    background-color:rgb(255, 255, 255);
+    background:transparent;
     
 }
 /*menu responsivo*/
 #menu-responsivo
 {   
-    position: absolute;
-    left: 0px ;
-    background: rgba(255, 255, 255, 0.966);
-    width: 100%;
+    position: fixed;
+    left: 200px ;top: 130px;
+    background: rgba(255, 255, 255, 0.842);
+    width: 80%;
+    padding: 30px;
     height: auto;
     display:flex;
     flex-direction: column;
     z-index: 99;
     border-radius: 6px;
     border: n;
-    transform: translate3d(-1500px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
     transition: transform .50s cubic-bezier(0, .52, 0, 1);
 }
+#btnFechaMenu{
+    border: none;
+    background-color:transparent;display: flex;
+}
 #menu-responsivo.show {
-    transform: translate3d(0px, 0, 0);
+    transform: translate3d(0, 0, 100px);
 }
 #login
 {
@@ -129,11 +134,11 @@ top: 10px;right: 20px;
     right: 500px;
     display: none;
     height: auto;
-    background: rgb(206, 206, 206);
     border-radius: 15px;
 }
 
 #container-login{
+    color: #5B1865;
     border-radius: 15px;
     display: flex; flex-direction: column; justify-content: start;align-items: center;
     background: transparent;
@@ -149,6 +154,11 @@ top: 10px;right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #5B1865;
+}
+#formulario-login{
+    padding: 30px;
+    border-radius: 15px;
 }
 #formulario-login p{
     display: flex;
