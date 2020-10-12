@@ -1,8 +1,8 @@
-@media (max-width: 660px) 
+@media (max-width: 661px) 
 {
     .logo{
         font-weight: bolder;
-        font-size: 1.4em;
+        font-size: 1.4em; 
         color: white;
         padding-left:20px ;
     }
