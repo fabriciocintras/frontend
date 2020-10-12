@@ -1,25 +1,48 @@
 @media (max-width: 661px) 
 {
-    .logo{
-        font-weight: bolder;
-        font-size: 1.4em; 
-        color: white;
-        padding-left:20px ;
-    }
 
+.menu li a{
+    padding: 0px;
+
+}#botao-abre-menu
+{   font-size: 1.1em;
+    border: none;
+    background-color:transparent;
+    font-weight: 500;
+}
+    .logo{
+        font-size: 1em;
+        padding-left:0;
+    }
+.nav-bar{
+    width: 100%;
+    justify-content: center;
+}
     .input-menu
     {
-    width:300px; 
-    margin-left: 30px; 
+    width:50px;  
     }
+    #menu-responsivo
+{   
+    position: absolute;
+    left: 0px;
+    background: rgba(255, 255, 255, 0.966);
+    padding-top: 150px ;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    z-index: 99;
+    border: 1px solid rgba(0, 0, 0, 0.432);
+    transform: translate3d(-1500px, 0, 0);
+    transition: transform .50s cubic-bezier(0, .52, 0, 1);
+}
     .container-promocoes
 {
     display: flex;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    padding:5px;
 }
     .botao-promocao
 {
