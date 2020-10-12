@@ -44,6 +44,7 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
     text-align: left;
     background: #FFFFFF;
     padding-left: 30px;
+    position: relative;
 }
 .input-menu
 {
@@ -81,14 +82,46 @@ top: 10px;right: 20px;
     color: white;
     font-weight: 500;
 }
+/*menu responsivo*/
+#menu-responsivo
+{   display: none;
+    position: absolute;
+    left:0px;
+    background: rgba(255, 255, 255, 0.966);
+    padding-top: 150px ;
+    width: 50%;
+    height: auto;
+    flex-direction: column;
+    z-index: 99;
+    border: 1px solid rgba(0, 0, 0, 0.432);
+}
+
+.menu-row
+{
+    width: 100%;
+}
+.menu-row ul{
+    display: flex;
+    justify-content: space-around;
+}
+.menu-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/*menu responsivo*/
 .featuring
 {
-   
-    padding-top: 138px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 98;
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
     background-image: url("img/fashion-1031469_1920.jpg");
+
 }
 .container-featuring
 {
@@ -97,12 +130,10 @@ top: 10px;right: 20px;
     height:600px;
     display: flex;
     flex-direction: column;
-
     align-items: center;
 }
 .container-featuring > .frete
 {
-    position: fixed ;
     background: #a5a5a5b0;
     width: 100%;
     height: 40px;
@@ -250,4 +281,5 @@ top: 10px;right: 20px;
     text-align: center;
     color: white;
 }
+
 

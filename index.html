@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsivo.css">
+    
     <title>Fabrício ALves</title>
 </head>
 <body>
@@ -28,15 +29,57 @@
         </div>
 
         <div class="nav-categoria">
-            <ul>
-                <li>
+           
+                <button id="botao-abre-menu">
                     <img  id="tresIcons"src="img/3icons.png" alt="3 tracos">
-                    <a href="">Categoria</a>
-                </li>
-            </ul>
+                    <a href="" >Categoria</a>
+                
         </div>
     </nav>
-                                                                                                            <!--end nav-->
+    <section  id="menu-responsivo" >
+        <button id="btnFechaMenu">Fecha o Menu</button>
+        <section class="menu-row"> <!--conteudo em linha horizontal-->
+            <ul>
+                <li><a href="">Masculinas</a></li>
+                <li><a href="">Femininas</a></li>
+                <li><a href="">Infantis</a></li>
+            </ul>  
+        </section>
+
+       <section class="menu-column">
+       
+        <section class="menu-column-links"><!--conteudo em linha horizontal-->
+            <ul>
+                <li><h3>marcas</h3></li>
+                <li><a href="">Adidas</a></li>
+                <li><a href="">oakley</a></li>
+                <li><a href="">Quiksilver</a></li>
+            </ul>
+        </section>
+        <section class="menu-column-links"><!--conteudo em linha horizontal-->
+            <ul>
+                <li><h3>Roupas</h3></li>
+                <li><a href="">Camisas</a></li>
+                <li><a href="">Calças</a></li>
+                <li><a href="">Bermudas</a></li>
+                <li><a href="">Jaquetas</a></li>
+                <li><a href="">Chinelos</a></li>
+                <li><a href="">Moletons</a></li>
+            </ul>
+        </section>
+        <section class="menu-column-links"><!--conteudo em linha horizontal-->
+            <ul>
+                <li><h3>Acessorio</h3></li>
+                <li><a href="">Bones</a></li>
+                <li><a href="">Meias</a></li>
+                <li><a href="">Oculos</a></li>
+                <li><a href="">Relogios</a></li>
+            </ul>
+        </section>
+        
+       </section>
+        
+    </section>                                                                                                      <!--end nav-->
 
                                                                                                         <!--featuring-->
     <section class="featuring">
@@ -125,5 +168,16 @@
             TODOS OS DIREITOS RESERVADOS
         </p>
     </section>
+<script>
+    
+document.getElementById("botao-abre-menu").onclick = function(){
+    document.querySelector("#menu-responsivo").style.display="initial";
+}
+
+document.getElementById("btnFechaMenu").onclick = function(){
+    document.querySelector("#menu-responsivo").style.display="initial"
+}
+
+</script>
 </body>
 </html>
