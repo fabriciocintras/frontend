@@ -1,17 +1,55 @@
 @media (max-width: 661px) 
 {
-
+    #menu-responsivo
+    {   
+        overflow: scroll;
+        position: fixed;
+        left: 0px ;
+        background: rgba(231, 231, 231, 0.918);
+        color: rgb(12, 12, 12);
+        padding:60px;
+        width: 90%;
+        height: 90vh;
+        display:flex;
+        flex-direction: column;
+        z-index: 110;
+        border-radius: 6px;
+        border: none;
+        transform: translate3d(-1500px, 0, 0);
+        transition: transform .50s cubic-bezier(0, .52, 0, 1);
+    }
+    menu-column-links ul,li,a{display: block; }
+    menu-column-links li,a:hover{
+        color: rgb(48, 48, 48);
+        font-weight: bolder;
+    }
+    .menu-row ul{
+        display: flex;flex-direction: column;
+        font-size: 1.4em;
+    }
+    .menu-column{
+        display: flex;
+        flex-direction: column;
+    }
 .menu li a{
     padding: 0px;
 
-}#botao-abre-menu
+}
+#btnFechaMenu{
+    font-size: 2em;
+    background: transparent;
+    border: none;
+    font-weight:bold;
+    color: #5B1865;
+}
+    #botao-abre-menu
 {   font-size: 1.1em;
     border: none;
     background-color:transparent;
     font-weight: 500;
 }
     .logo{
-        font-size: 1em;
+        font-size: 1.4em;
         padding-left:0;
     }
 .nav-bar{
@@ -20,22 +58,9 @@
 }
     .input-menu
     {
-    width:50px;  
+    width:300px; 
     }
-    #menu-responsivo
-{   
-    position: absolute;
-    left: 0px;
-    background: rgba(255, 255, 255, 0.966);
-    padding-top: 150px ;
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-    z-index: 99;
-    border: 1px solid rgba(0, 0, 0, 0.432);
-    transform: translate3d(-1500px, 0, 0);
-    transition: transform .50s cubic-bezier(0, .52, 0, 1);
-}
+
     .container-promocoes
 {
     display: flex;
