@@ -24,10 +24,10 @@
             </ul>
             <ul class="menu">
                 <li><a href="">Carrinho</a></li>
-                <li><a href="">Login</a></li>
+                <li><a href="" ><button id="fazer-login">Login</button></a></li>
             </ul>
         </div>
-
+        
         <div class="nav-categoria">
            
                 <button id="botao-abre-menu">
@@ -80,7 +80,29 @@
         
        </section>
         
-    </section>                                                                                                      <!--end nav-->
+    </section> 
+    <section class="login">
+       
+        <section class="container-login">
+            <button  id="sair-menu"style="border: none;background-color: transparent;font-weight: bolder;font-size: 1,1em;"> X </button>
+            <h2>FAÇA O LOGIN</h2>
+            <form action="" method="POST" class="formulario-login">
+                <p>
+                    <label for="">Login:</label>
+                    <input type="text"placeholder="">
+                </p>
+                <p>
+                    <label for="">Senha:</label>
+                    <input type="text"placeholder="">
+                    <h4>esqueceu senha</h4>
+                </p>
+                <p>
+                    <input class="botao-form" type="submit" value="ENTRAR">
+                    <h4>cadastrar novo usuario</h4>
+                </p>
+            </form>
+        </section>
+    </section>                                                                                                     <!--end nav-->
 
                                                                                                         <!--featuring-->
     <section class="featuring">
@@ -175,6 +197,10 @@
     }
     document.getElementById("btnFechaMenu").onclick = function(){
         document.querySelector("#menu-responsivo").classList.remove("show");
+    }
+   
+    document.getElementById("fazer-login").onclick = function(){
+        document.querySelector(".login").style.display="flex";
     }
 
 </script>

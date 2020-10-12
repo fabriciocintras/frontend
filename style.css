@@ -70,6 +70,7 @@ top: 10px;right: 20px;
 .icone-input img{
     width: 100%;
 }
+
 #tresIcons{
     width: 18px;
 }
@@ -92,20 +93,64 @@ top: 10px;right: 20px;
 #menu-responsivo
 {   
     position: relative;
-    left: 0;
+    left: 500px;
     background: rgba(255, 255, 255, 0.966);
     padding-top: 150px ;
     width: 50%;
     height: auto;
-    display:none;
+    display:flex;
     flex-direction: column;
     z-index: 99;
     border: 1px solid rgba(0, 0, 0, 0.432);
-    transform: translate3d(-150px, 0, 0);
-    transition: transform .3s cubic-bezier(0, .52, 0, 1);
+    transform: translate3d(-1500px, 0, 0);
+    transition: transform .5s cubic-bezier(0, .52, 0, 1);
 }
 #menu-responsivo.show {
     transform: translate3d(0px, 0, 0);
+}
+.login
+{
+    position: fixed; z-index: 99;
+    top: 150px;
+    right: 500px;
+    display: none;
+    height: auto;
+    background: rgba(206, 206, 206, 0.808);
+}
+.container-login{
+    display: flex; flex-direction: column; justify-content: start;align-items: center;
+    background: transparent;
+    padding: 30px;
+}
+.botao-form 
+{
+    border: none;
+    width: 100px;
+    padding: 5px 5px;
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario-login p{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+}
+.formulario-login label
+{
+    font-size: 1.4em;
+    font-weight: 500;
+    border: none;
+}
+.formulario-login input{
+    margin: 5px;
+    padding: 10px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
 }
 .menu-row
 {
