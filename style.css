@@ -2,6 +2,7 @@ html, body{
     font-family: 'Noto Sans JP', sans-serif;
     padding: 0;
     margin: 0;
+    background:#fb8c240c;
 }
 *{
     list-style: none;
@@ -105,7 +106,8 @@ top: 10px;right: 20px;
 #menu-responsivo
 {   
     position: fixed;
-    left: 200px ;top: 130px;
+    left: 200px ;
+    top: 130px;
     background: rgba(255, 255, 255, 0.842);
     width: 80%;
     padding: 30px;
@@ -114,7 +116,7 @@ top: 10px;right: 20px;
     flex-direction: column;
     z-index: 99;
     border-radius: 6px;
-    border: n;
+    border: none;
     transform: translate3d(-3000px, 0, 0);
     transition: transform .50s cubic-bezier(0, .52, 0, 1);
 }
@@ -135,6 +137,7 @@ top: 10px;right: 20px;
     display: none;
     height: auto;
     border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.767);
 }
 
 #container-login{
@@ -177,7 +180,7 @@ top: 10px;right: 20px;
     padding: 10px 30px;
     font-size: 1em;
     font-weight: bold;
-    border: none;
+    border:2px solid rgba(104, 102, 102, 0.856);
 }
 .menu-row
 {
@@ -216,12 +219,13 @@ top: 10px;right: 20px;
 {
     position: fixed;
     top: 125px;
-    background: #a5a5a5b0;
+    background: #f0eeeede;
     width: 100%;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #E36414;
 }
 #button-featuring
 {
@@ -253,7 +257,7 @@ top: 10px;right: 20px;
 .botao-promocao
 {
     display: flex;
-    background: #5F0F40;
+    background-color: #5F0F40;
     width: 22%;
     padding: 15px 0px;
     color: #ffffff;
@@ -332,7 +336,6 @@ top: 10px;right: 20px;
     width: 100%;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.089);
     
 }
 .container-marcas

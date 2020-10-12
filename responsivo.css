@@ -52,7 +52,7 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
     background: transparent;
     border: none;
     font-weight:bold;
-    color: #5B1865;
+    color: #5F0F40;
 }
     #botao-abre-menu
 {   font-size: 1.1em;
@@ -83,7 +83,7 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
     .botao-promocao
 {
     display: flex;
-    background: #5B1865;
+    background: #5F0F40;
     width: 47%;
     margin: 5px;
     color: #FFFFFF;
