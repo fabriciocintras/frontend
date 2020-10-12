@@ -24,7 +24,7 @@
             </ul>
             <ul class="menu">
                 <li><a href="">Carrinho</a></li>
-                <li><a href="" ><button id="fazer-login">Login</button></a></li>
+                <button id="fazer-login">Login</button>
             </ul>
         </div>
         
@@ -37,7 +37,7 @@
         </div>
     </nav>
     <section  id="menu-responsivo" >
-        <button id="btnFechaMenu">Fecha o Menu</button>
+        <button id="btnFechaMenu" style="font-weight: bolder;font-size: 1em; text-align: center;border: none;background: transparent;">X</button>
 
         <section class="menu-row"> <!--conteudo em linha horizontal-->
             <ul>
@@ -81,12 +81,12 @@
        </section>
         
     </section> 
-    <section class="login">
+    <section id="login">
        
-        <section class="container-login">
+        <section id="container-login">
             <button  id="sair-menu"style="border: none;background-color: transparent;font-weight: bolder;font-size: 1,1em;"> X </button>
             <h2>FAÇA O LOGIN</h2>
-            <form action="" method="POST" class="formulario-login">
+            <form action="" method="POST" id="formulario-login">
                 <p>
                     <label for="">Login:</label>
                     <input type="text"placeholder="">
@@ -191,6 +191,7 @@
             TODOS OS DIREITOS RESERVADOS
         </p>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
     document.getElementById("botao-abre-menu").onclick = function(){
         document.querySelector("#menu-responsivo").classList.add("show");
@@ -198,10 +199,16 @@
     document.getElementById("btnFechaMenu").onclick = function(){
         document.querySelector("#menu-responsivo").classList.remove("show");
     }
-   
-    document.getElementById("fazer-login").onclick = function(){
-        document.querySelector(".login").style.display="flex";
-    }
+
+    $("#fazer-login").on('click', function(){
+    $("#login").fadeIn();
+    $("#container-login").slideDown();
+});
+
+$("#sair-menu").on('click', function(){
+    $("#container-login").slideUp();
+    $("#login").fadeOut();
+});
 
 </script>
 </body>
