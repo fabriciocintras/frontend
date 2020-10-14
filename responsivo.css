@@ -91,7 +91,9 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
     justify-content: center;
     align-items: center;
 }
-
+.featuring{
+    background-size: cover;
+}
 
 .container-featuring
 {
