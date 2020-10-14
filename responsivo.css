@@ -12,6 +12,7 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
 
 @media (max-width: 661px) 
 {
+    .icone-input{display:none;}
     #menu-responsivo
     {   
         overflow: scroll;
@@ -63,13 +64,13 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
         font-size: 1.4em;
         padding-left:0;
     }
-.nav-bar{
+.nav-bar ul li{
     width: 100%;
-    justify-content: center;
+    padding:0 5px;
 }
     .input-menu
     {
-    width:300px; 
+        display: none;
     }
 
     .container-promocoes
@@ -83,7 +84,7 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
     .botao-promocao
 {
     display: flex;
-    background: #5F0F40;
+    background:#53135D;
     width: 47%;
     margin: 5px;
     color: #FFFFFF;
@@ -100,9 +101,7 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
     padding-top: 77px;
 }
 .container-featuring > .frete
-{
-    position: fixed;
-    top: 259px;
+{display: none;
 }
 #button-featuring
 {
@@ -117,16 +116,21 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
 }
 .container-sessao
 {
-    width: 50%;
+    width: 100%;
     justify-content: center;
+    overflow: hidden;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 .box-sessao
 {
     margin:5px;
-    width: 93%;
+    width: 100%;
 }
-
+.sessao{
+    display: flex;
+    
+}
 
 .container-categorias
 {
@@ -146,12 +150,12 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
     width: 100%;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.089);
     
 }
 .container-marcas
 {
-    width: 40%;
+    justify-content: center;
+    width: 80%;
 
     
     
@@ -183,4 +187,5 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
 
 
 }
+
 }

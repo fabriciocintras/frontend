@@ -2,7 +2,7 @@ html, body{
     font-family: 'Noto Sans JP', sans-serif;
     padding: 0;
     margin: 0;
-    background:#fb8c240c;
+    background:#ffffff0c;
 }
 *{
     list-style: none;
@@ -59,16 +59,7 @@ a,p,h3,h2,h1,li,ul,div,section{padding: 0;}
     
     
 }
-#fazer-login{
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-weight: 500;
-    font-size: 1.2em;
-    padding: 15px;
 
-
-}
 .pesquisa
 {
     
@@ -106,7 +97,7 @@ top: 10px;right: 20px;
 #menu-responsivo
 {   
     position: fixed;
-    left: 200px ;
+    left: 150px ;
     top: 130px;
     background: rgba(255, 255, 255, 0.842);
     width: 80%;
@@ -141,9 +132,10 @@ top: 10px;right: 20px;
 }
 
 #container-login{
-    color:#5F0F40;
+    
     border-radius: 15px;
-    display: flex; flex-direction: column; justify-content: start;align-items: center;
+    display: flex; flex-direction: column;
+     justify-content: start;align-items: center;
     background: transparent;
     padding: 30px;
 }
@@ -157,7 +149,6 @@ top: 10px;right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #5F0F40;
 }
 #formulario-login{
     padding: 30px;
@@ -209,7 +200,7 @@ top: 10px;right: 20px;
 }
 .container-featuring
 {
-
+    position: relative;
     width: 100%;
     height:600px;
     display: flex;
@@ -217,15 +208,14 @@ top: 10px;right: 20px;
 }
 .container-featuring > .frete
 {
-    position: fixed;
-    top: 125px;
+    position: absolute;
+    top: 110px;
     background: #f0eeeede;
     width: 100%;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #E36414;
 }
 #button-featuring
 {
@@ -233,9 +223,9 @@ top: 10px;right: 20px;
     align-self: center;
     padding: 10px 60px;
     background: #25110181;
-    color: #FFFFFF;
+    color: #f1f1f1;
     border: none;
-    position: absolute;bottom: 10px;
+    position: absolute;bottom: 100px;
     font-size: 1.2em;
 }
 .promocoes{
@@ -257,10 +247,10 @@ top: 10px;right: 20px;
 .botao-promocao
 {
     display: flex;
-    background-color: #5F0F40;
+    background:#53135D;
     width: 22%;
     padding: 15px 0px;
-    color: #ffffff;
+    color: #f1f1f1;
     justify-content: center;
     align-items: center;
 }
@@ -363,7 +353,7 @@ top: 10px;right: 20px;
 {
     width: 100%;
     height: 400px;
-    background-color:#5F0F40;
+    background:#53135D;
 }
 .rodape p{
     line-height: 400px;
